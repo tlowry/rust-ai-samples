@@ -5,3 +5,4 @@ authors = ["Tony Lowry <tonylowryie@gmail.com>"]
 
 [dependencies]
 dataplotlib = "0.1.3"
+ndarray = "0.12.0"
