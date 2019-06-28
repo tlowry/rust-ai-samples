@@ -1,9 +1,11 @@
 extern crate dataplotlib;
 extern crate ndarray;
+extern crate probability;
 
 use dataplotlib::util::{linspace, zip2};
 use dataplotlib::plotbuilder::PlotBuilder2D;
 use dataplotlib::plotter::Plotter;
+use probability::distribution::Gaussian;
 use std::f64::consts::E;
 
 use ndarray::Array;
@@ -18,7 +20,10 @@ fn main() {
 
     println!("XX{:?}",bb);
 
-    draw(&x, &tanh);
+    //draw(&x, &tanh);
+    draw(&x, &sigmoid);
+    //let g = Gaussian::new(1.0,5.0);
+    //draw();
 }
 
 // Sigmoid function
